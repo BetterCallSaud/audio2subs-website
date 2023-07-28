@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { SFProRegular, SFProBold } from "../styles/fonts";
 
 export default function Home() {
@@ -23,10 +24,7 @@ export default function Home() {
           property="og:description"
           content="with audio2subs, you can transcribe your audio files and turn them into single word captions, like the ones you see in those trending reels and shorts. powered by AI, audio2subs helps you reach a pinnacle of content creation by automating single word captioning, so you don't have to sit and hard code the captions for long! 😵"
         />
-        <meta
-          property="og:image"
-          content="/static/banner.png"
-        />
+        <meta property="og:image" content="/static/banner.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://audio2subs.vercel.app/" />
@@ -38,10 +36,7 @@ export default function Home() {
           property="twitter:description"
           content="with audio2subs, you can transcribe your audio files and turn them into single word captions, like the ones you see in those trending reels and shorts. powered by AI, audio2subs helps you reach a pinnacle of content creation by automating single word captioning, so you don't have to sit and hard code the captions for long! 😵"
         />
-        <meta
-          property="twitter:image"
-          content="/static/banner.png"
-        />
+        <meta property="twitter:image" content="/static/banner.png" />
 
         {/* Meta Tags Generated with https://metatags.io88 */}
 
@@ -63,7 +58,7 @@ export default function Home() {
           </h1>
           <h1
             style={SFProRegular.style}
-            className="text-lg uppercase tracking-[0.5rem] text-white text-center"
+            className="text-center text-lg uppercase tracking-[0.5rem] text-white"
           >
             Easy Single Word Captioning
           </h1>
@@ -100,12 +95,25 @@ export default function Home() {
           </div>
         </div>
         <h1
-          className="rounded-2xl bg-white px-4 py-2 text-sm mx-8"
+          className="mx-8 rounded-2xl bg-white px-4 py-2 text-sm"
           style={SFProRegular.style}
         >
           soon, you{`'`}ll be able to use the audio2subs without <b>saud</b>.
           don{"'"}t worry 🙂
         </h1>
+        <div className="mt-4 flex justify-center text-center">
+          <a
+            href="https://www.producthunt.com/posts/audio2subs?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-audio2subs"
+            target="_blank"
+          >
+            <Image
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=405566&theme=neutral"
+              alt="audio2subs - Easy&#0032;single&#0032;word&#0032;captioning | Product Hunt"
+              width={250}
+              height={54}
+            />
+          </a>
+        </div>
         <footer
           className="absolute bottom-2 text-center text-xl text-white"
           style={SFProRegular.style}

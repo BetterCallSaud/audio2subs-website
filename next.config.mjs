@@ -18,6 +18,10 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    dangerouslyAllowSVG: true,
+    domains: ["api.producthunt.com"],
+  },
 };
 
 export default config;
